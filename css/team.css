@@ -48,3 +48,107 @@
   margin: 20px 30px;
   color: rgb(155, 155, 155);
 }
+.preTeam {
+  margin: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.preTeam-head {
+  padding: 10px 30px;
+  border: 2px solid rgb(168, 168, 168);
+  border-radius: 20px;
+  /* background-color: whitesmoke; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.preTeam-head > h4 {
+  text-transform: capitalize;
+  color: rgb(100, 100, 100);
+}
+.preTeam__main {
+  width: 100%;
+}
+.preTeam__box {
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid pink; */
+  padding: 10px;
+  margin: 15px 0px;
+  border-radius: 20px;
+  background-color: rgba(245, 245, 245, 0.74);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.preTeam__left {
+  margin-left: 10px;
+}
+.preTeam__left > h2 {
+  color: rgba(0, 0, 0, 0.692);
+  text-transform: capitalize;
+}
+.preTeam__left > p {
+  color: gray;
+}
+.preTeam__leftContent-heading {
+  width: 70%;
+}
+.preTeam__leftContent-heading > h3 {
+  margin-left: 20px;
+  text-transform: capitalize;
+  color: gray;
+  padding-bottom: 3px;
+}
+.preTeam__leftContent {
+  display: flex;
+  /* justify-contsent: center; */
+  /* align-items: center; */
+  flex-wrap: wrap;
+  border: 2px solid rgb(233, 233, 233);
+  border-radius: 20px;
+  padding: 5px 7px;
+  min-height: 50px;
+  background-color: whitesmoke;
+}
+.preTeam__leftContent_item > p {
+  padding: 4px 6px;
+  border: 1px solid rgb(122, 214, 218);
+  text-transform: capitalize;
+  margin: 4px;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .preTeam__leftContent {
+    flex-wrap: nowrap;
+    overflow-y: scroll;
+  }
+  .preTeam__leftContent_item > p {
+    width: max-content;
+  }
+  .preTeam {
+    margin: 10px;
+  }
+  .preTeam__left > h2 {
+    font-size: 1.2rem;
+  }
+  .preTeam__left > p {
+    font-size: 0.8rem;
+    padding-top: 5px;
+  }
+  .preTeam__box {
+    display: block;
+  }
+
+  .preTeam__leftContent-heading {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
